@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrumentos "Porvenir"</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ07YyFjxI0J7EDo3R75vJj60FcKkJKc5X1z1VVGnR5gFv5cJMb36vGgJptg" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://th.bing.com/th/id/R.702472ab2a0af937d3011af4b38519b8?rik=GiRxaeadWl0VFw&pid=ImgRa');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .title {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .description {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .menu::-webkit-scrollbar {
+            display: none;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 85px;
+            height: 100%;
+            transition: .3s;
+            background: #ffffff12;
+            padding: 20px 20px 20px 0;
+            backdrop-filter: blur(5px);
+            box-shadow: 8px 0px 9px 0px #ff000049;
+        }
+
+        .menu:hover {
+            width: 260px;
+        }
+
+        .menu-content li {
+            list-style: none;
+            border-radius: 0px 50px 50px 0;
+            transition: .3s;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .menu-content li:hover {
+            background: #21004d;
+        }
+
+        .menu-content li span:nth-child(2) {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(213, 213, 213);
+            display: flex;
+            align-items: center;
+            font-family: 'calibri';
+        }
+
+        .material-symbols-outlined {
+            padding: 10px;
+            font-size: 25px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background: #0c0c0c;
+        }
+
+        .menu:hover .menu-content li span:nth-child(2) {
+            display: block;
+        }
+
+        .menu-content li.active span:nth-child(2) {
+            display: block;
+            font-weight: bold;
+            color: #f39c12;
+        }
+
+        .menu:not(:hover) .menu-content li.active span:nth-child(2) {
+            display: none;
+        }
+        .navbar {
+            position: flex-end; 
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            background-color: #534caf;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="menu-content">
+            <li class="active"><span class="material-symbols-outlined">dataset</span><span>Usted esta en la Pagina 3</span></li>
+            <li><a href="#"><span class="material-symbols-outlined">browse</span><span>pagina 1</span></a></li>
+            <li><a href="#"><span class="material-symbols-outlined">analytics</span><span>Pagina 2</span></a></li>
+            <li><a href="#"><span class="material-symbols-outlined">home</span><span>Index</span></a></li>
+            <li><a href="https://github.com/"><span class="material-symbols-outlined">Hub</span><span>Github</span></a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1 class="title">Instrumentos "Porvenir"</h1>
+        <p class="description">Venta de instrumentos para toda clase de musica</p>
+        <p class="description">Empieza a ser parte de las personas que crean arte auditiva Hoy mismo con hasta<h1>40% de descuento!!!</h1></p>
+    </div>
+</body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Instrumentos "Porvenir"</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Descuentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Precios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</html>

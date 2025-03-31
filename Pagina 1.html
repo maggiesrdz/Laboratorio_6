@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floreria "El destino"</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <style>
+         .button-container {
+
+            display: flex;
+            flex-direction: center;
+            gap: 20px;
+            margin-top: 200px;
+        }
+
+        button {
+            position: relative; 
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+
+        @keyframes colorCascada {
+            0% {
+                color: red;
+            }
+            20% {
+                color: orange;
+            }
+            40% {
+                color: yellow;
+            }
+            60% {
+                color: green;
+            }
+            80% {
+                color: blue;
+            }
+            100% {
+                color: purple;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://wallpapers.com/images/hd/spring-flowers-desktop-bhxh0uhq074ckiuo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .title {
+            font-size: 50px;
+            margin: 0;
+            animation: colorCascada 5s infinite;
+        }
+
+        .description-text {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .menu::-webkit-scrollbar {
+            display: none;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 85px;
+            height: 100%;
+            transition: .3s;
+            background: #ffffff12;
+            padding: 20px 20px 20px 0;
+            backdrop-filter: blur(5px);
+            box-shadow: 8px 0px 9px 0px #ff000049;
+        }
+
+        .menu:hover {
+            width: 260px;
+        }
+
+        .menu-content li {
+            list-style: none;
+            border-radius: 0px 50px 50px 0;
+            transition: .3s;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .menu-content li:hover {
+            background: #21004d;
+        }
+
+        .menu-content li span:nth-child(2) {
+            display: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(213, 213, 213);
+            display: flex;
+            align-items: center;
+            font-family: 'calibri';
+        }
+
+        .material-symbols-outlined {
+            padding: 10px;
+            font-size: 25px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background: #0c0c0c;
+        }
+
+        .menu:hover .menu-content li span:nth-child(2) {
+            display: block;
+        }
+
+        .menu-content li.active span:nth-child(2) {
+            display: block;
+            font-weight: bold;
+            color: #f39c12;
+        }
+
+        .menu:not(:hover) .menu-content li.active span:nth-child(2) {
+            display: none;
+        }
+        .description {
+            display: none;
+            font-size: 14px;
+            color: white;
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(202, 4, 241, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+        }
+
+        button:hover .description {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul class="menu-content">
+            <li class="active"><span class="material-symbols-outlined">browse</span><span>Usted esta en la pagina 1</span></li>
+            <li><a href="#"><span class="material-symbols-outlined">home</span><span>Index</span></a></li>
+            <li><a href="#"><span class="material-symbols-outlined">analytics</span><span>Pagina 2</span></a></li>
+            <li><a href="#"><span class="material-symbols-outlined">dataset</span><span>Pagina 3</span></a></li>
+            <li><a href="https://github.com/"><span class="material-symbols-outlined">Hub</span><span>Github</span></a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1 class="title">Floreria "El destino"</h1>
+        <p class="description-text">Para todo dia, hora y momento, tenemos las flores para la ocasion que creara grandes recuerdos</p>
+        <p class="description-text">contamos con envios para toda la ciudad a cualquier momento.</p>
+    </div>
+        <div class="button-container">
+            <button>Ver Flores
+                <span class="description">Explora una variedad de flores hermosas</span>
+            </button>
+            <button>Crea tu ramo
+                <span class="description">Diseña tu propio ramo con flores</span>
+            </button>
+            <button>Envia flores
+                <span class="description">Envía flores a tus seres queridos</span>
+            </button>
+        </div>
+</body>
+
+</html>
